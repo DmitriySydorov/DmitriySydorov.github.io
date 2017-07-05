@@ -26,6 +26,11 @@ header{
     justify-content: space-between;
     align-items: flex-end;
     border-bottom: 3px solid rgb(114, 4, 125);
+-o-background-size: 100% 100%;  
+-webkit-background-size:100% 100%; 
+-moz-background-size:100% 100%; 
+-khtml-background-size:100% 100%; 
+background-size: 100% 100%;
 }
 header .portImg{
     text-decoration: none;
