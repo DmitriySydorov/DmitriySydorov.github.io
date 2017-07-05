@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'Lobster';
+    src: url(../font/Lobster-Regular.ttf);
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../font/OpenSans-Regular.ttf);
+    font-weight: 400;
+}
+*{
+    padding:0;
+    margin: 0 auto;
+    font-size: 10px;
+
+}
+body{
+    width: 100%;
+    max-width: 1280px;
+    background-color: rgba(156, 132, 154, 0.36);
+
+}
+header{
+    background-image: url(../image/header_bg.png);
+    height:8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 3px solid rgb(114, 4, 125);
+}
+header .portImg{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 7rem;
+}
+.author{
+
+    font-family: "Open Sans",sans-serif;
+    font-size: 1.6rem;
+    font-style: italic;
+    color: #ffffff;
+    margin: 0;
+    width: 25%;
+    margin-left: 15px;
+}
+.authorName{
+    font-family: Lobster,sans-serif;
+    font-size: 2rem;
+    color: #ffffff;
+}
+h1{
+    font-family: 'Lobster',sans-serif;
+
+    color: #ffffff;
+    display: block;
+}
+nav{
+    margin: 0;
+    width: 25%;
+}
+li{
+    float: right;
+    list-style-type: none;
+}
+.navItem{
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    margin:0 15px 0 15px;
+    color:  #ffffff;
+    font-size: 1.8rem;
+    background-color: transparent;
+    transition: background-color 1s, color 2s;
+}
+.navItem:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+main{
+   background: url(../image/759.png);
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+article{
+    width: 45%;
+    height: 250px;
+    overflow: hidden;
+    margin: 5px;
+    box-shadow: 0 0 30px #000000;
+    border: 1px solid #271220;
+    background-color: rgba(0,0,0,0.6);
+}
+.textItem{
+    float: right;
+    display: block;
+    margin:10% 10% 0 0;
+}
+.nameSite{
+    text-align: center;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.4rem;
+}
+.description{
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.6rem;
+}
+@media screen and (max-width: 1000px){
+   section{
+       flex: none;
+   }
+    article{
+       width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+   }
+    @media screen and (max-width: 500px){
+        article{
+            height: 180px;
+        }
+        .textItem{
+            margin: 10% 0 0 0;
+        }
+    }
+    @media screen and (max-width: 400px){
+        *{
+            font-size: 8px;
+        }
+    }
+}
+.onGitURL{
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-shadow: 0 0 10px #000000;
+    font-weight: bold;
+}
+.onGit{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #72047d;
+    transition: background-color 1s, color 2s;
+    border: none;
+    box-shadow: 0 0 15px #72047d;
+    margin-top: 10px;
+}
+.onGit:active{
+    box-shadow:inset 0 0 20px #72047d;
+}
+
+.galleryItem img{
+    width: 40%;
+    margin-left: 10%;
+    cursor: pointer;
+
+}
+.galleryItem img:hover{
+    box-shadow: 0 -10px 20px #ffffff;
+    width: 42%;
+    position: relative;
+}
+
+.popup {
+    position: absolute;
+    height:200%;
+    width:100%;
+    top:0;
+    left:0;
+    display:none;
+    text-align:center;
+}
+
+  .popup_bg {
+      background:rgba(0,0,0,0.4);
+      position:absolute;
+      z-index:1;
+      height:100%;
+      width:100%;
+  }
+  .popup_img {
+      position: relative;
+      margin:0 auto;
+      z-index:2;
+      max-height:94%;
+      max-width:94%;
+
+  }
+footer{
+
+    background-image: url(../image/header_bg.png);
+}
+.contact{
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+.fa-phone{
+    background-color: #0cdc32;
+    border: 2px solid#ffffff;
+    border-radius: 10%;
+    padding: 5px;
+    margin: 10px 0;
+}
+.fa-vimeo{
+    padding: 0;
+}
+.tel{
+    font-size: 20px;
+    color: #ffffff;
+}
+.viber{
+    font-size: 20px;
+    background-color: #72047d;
+    border: 1px solid #ffffff;
+    border-radius: 30%;
+    padding: 3px;
+}
+footer i{
+    color: #ffffff;
+    padding:10px;
+    border-radius: 50%;
+    width: 25px;
+    text-align: center;
+}
+footer a{
+    font-size: 25px;
+}
+.fa-vk{
+    background-color: darkblue;
+}
+.fa-github{
+    background-color: blueviolet;
+}
+.fa-gitlab{
+    background-color: crimson;
+}
+.fa-google-plus{
+    background-color: #ff2a16;
+}
+.fa-skype{
+    background-color: #8ec1ff;
+}
+.fa-volume-control-phone{
+    background-color: indigo;
+}
