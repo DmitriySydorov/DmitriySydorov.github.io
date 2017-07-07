@@ -76,7 +76,7 @@ li{
     color: #000000;
 }
 main{
-   background: url(../image/759.png);
+   background-image: url(../image/759.png);
 -o-background-size: 100% 100%;  
  -webkit-background-size:100% 100%; 
  -moz-background-size:100% 100%; 
