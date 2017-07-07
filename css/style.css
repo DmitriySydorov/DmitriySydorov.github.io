@@ -77,11 +77,7 @@ li{
 }
 main{
    background-image: url(../image/759.png);
--o-background-size: 100% 100%;  
- -webkit-background-size:100% 100%; 
- -moz-background-size:100% 100%; 
- -khtml-background-size:100% 100%; 
- background-size: 100% 100%;
+
 }
 section{
     display: flex;
@@ -123,6 +119,9 @@ article{
         margin-bottom: 20px;
    }
     @media screen and (max-width: 500px){
+        main{
+            background-image: url(../image/760.png);
+        }
         article{
             height: 180px;
         }
